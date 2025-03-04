@@ -4,7 +4,7 @@
 namespace String_Chars
 {
     class Program
-    {
+    {   
         static void Main(string[] args)
         {
             //"" is must!!!, '' is for Char
