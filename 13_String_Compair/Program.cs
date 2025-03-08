@@ -10,21 +10,21 @@ namespace StringCompair
         static void Main(string[] args)
         {
             //````````````````empty
-            // initial empty string
-            // string name = "";
-            // string name2 = string.Empty;
+            initial empty string
+            string name = "";
+            string name2 = string.Empty;
 
-            // System.Console.Write("Enter your name: ");
-            // string name = Console.ReadLine()?? "";
+            System.Console.Write("Enter your name: ");
+            string name = Console.ReadLine()?? "";
 
-            // if(name != string.Empty)// better look than "", bug if typo space " "!
-            // {
-            //     System.Console.WriteLine($"your name is {name}");
-            // }
-            // else
-            // {
-            //     System.Console.WriteLine("Name is Empty");
-            // }
+            if(name != string.Empty)// better look than "", bug if typo space " "!
+            {
+                System.Console.WriteLine($"your name is {name}");
+            }
+            else
+            {
+                System.Console.WriteLine("Name is Empty");
+            }
 
             //``````````````````Equals *** == compair value in memory reference, Equals compair value only 
 
@@ -96,7 +96,7 @@ namespace StringCompair
                     System.Console.WriteLine("we got the same name");
                 }
             }
-
+            
         }
     }
 }
