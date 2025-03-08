@@ -40,6 +40,8 @@ namespace NumericFormatting
             System.Console.WriteLine(money2.ToString("c", CultureInfo.CreateSpecificCulture("en-US")));//($3.33)
             System.Console.WriteLine(money2.ToString("c", CultureInfo.CreateSpecificCulture("zh-CN")));//-¥3.33
             System.Console.WriteLine(money2.ToString("c", CultureInfo.CreateSpecificCulture("en-AU")));//-$3.33  australia
+
+
         }
     }
 }

@@ -2,14 +2,14 @@
 using System.Threading.Tasks;
 
 
-namespace Output
+namespace StingOutput
 {
     class Program
     {
         static void Main(string[] args)
         {
             //   \t TAB   \n newline   \"escape
-            // escape
+            //--------------------- escape
             string speech = "He said \"Somethin\"";//He said "Somethin"
             System.Console.WriteLine(speech);
 
@@ -17,7 +17,7 @@ namespace Output
             string path = "C:\\Users\\CoffeeNCode\\Desktop\\C#\n new line test"; // C:\Users\CoffeeNCode\Desktop\C#
             System.Console.WriteLine(path);
 
-            // @  Verbatim String Literals ignore escape slash
+            //----------------- @  Verbatim String Literals ignore escape slash
             //The @ symbol allows you to write multi-line strings and include special characters (like backslashes \) without escaping them.
             path = @"C:\\Users\\CoffeeNCode\\Desktop\\C#"; //C:\\Users\\CoffeeNCode\\Desktop\\C#
             System.Console.WriteLine(path);
@@ -37,12 +37,32 @@ This is line 3";
             System.Console.WriteLine(@class);
 
             // $ +
-            // string concatination
+            // string concatenation
             System.Console.WriteLine("string1 " + "string2");
 
-            // string Literals
+            // string interpolation
             string name = "Eric";
             System.Console.WriteLine($"my name is {name}");
+
+            //---------------------- string formatting 
+            int age = 36;
+            System.Console.WriteLine("Name: " + name);
+            System.Console.WriteLine("Age: " + age);
+            System.Console.WriteLine("your name is {0}, age is {1}", name, age);
+            System.Console.WriteLine($"your name is {name}, age is {age}");
+
+
+            //``````````````````````````string interpolation
+            System.Console.WriteLine($"your name is {name}, age is {age}");
+
+            //----------concat
+
+            string test = string.Concat("your name is ", name, " and your age is ", age);
+
+            // concat array
+
+            string[] names = new string[] {"eric", "ada", "alex"};
+            System.Console.WriteLine(string.Concat(names));// no space
         }
     }
 }
